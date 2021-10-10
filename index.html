@@ -11,10 +11,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
 
     <!-- These scripts are needed for hamburger menu icon and other icons -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" defer></script>
     <script nomodule="" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" defer></script>
+
+    <script src="/js/script.js" defer></script>
 
 </head>
 <body>
@@ -45,23 +48,35 @@
     <main>
         <!-- Image Slding Hero Section -->
         <section class="section-hero">
-            <div class="hero-slides">
-                <!-- Radio buttons start -->
-                <input type="radio" name="radio-btn" id="radio1">
-                <input type="radio" name="radio-btn" id="radio2">
-                <input type="radio" name="radio-btn" id="radio3">
-                <input type="radio" name="radio-btn" id="radio4">
-                <!-- Radio buttons end -->
-                <!-- Slide images start -->
-
-                
-
-
-
+            
+            <div class="container">
+                <h1 class="slogan">Just The Place To Relax</h1>
             </div>
+
+            <div class="img-slider">
+                <div class="slide active">
+                  <img src="/img/hero/hero_img1.jpg" alt="">
+                </div>
+                <div class="slide">
+                  <img src="/img/hero/hero_img2.jpg" alt="">
+                </div>
+                <div class="slide">
+                  <img src="/img/hero/hero_img3.jpg" alt="">
+                </div>
+                <div class="slide">
+                  <img src="/img/hero/hero_img4.jpg" alt="">
+                </div>
+                <div class="navigation">
+                  <div class="btn active"></div>
+                  <div class="btn"></div>
+                  <div class="btn"></div>
+                  <div class="btn"></div>
+                </div>
+              </div>
+            
         </section>
     </main>
-
-
+    
+    
 </body>
 </html>

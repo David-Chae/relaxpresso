@@ -1,0 +1,36 @@
+/***************************************************************/
+/* General Reusable Components 
+* This css file contains general reusable heading components.
+* These components include html class, body class, different types 
+* of headings, buttons, grids, margins (helper classes), lists 
+* and a strong tag class. 
+*/
+/***************************************************************/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    /* font-size: 10px; Setting it to 10px helps to calculate the sizes of other elements using rem unit.*/
+    /* 10px / 16px = 0.625 = 62.5%. */
+    /* Percentage of user's browser font setting. 
+     * It's in percentage to help scaling down the size. 
+     * It respects users' default font-size setting.
+     */
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    color: #30aa8d;
+    line-height: 1;
+
+    /* Only works if there is nothing absolutely 
+    positioned in relation to body */
+    overflow-x: hidden;
+}

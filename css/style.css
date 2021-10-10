@@ -63,3 +63,73 @@
 .icon-mobile-nav[name="close-outline"]{
     display: none;
 }
+
+
+/***************************************************************/
+/* Hero Sction */
+/***************************************************************/
+
+
+.slogan{
+    width: 100%;
+    z-index: 10;
+    font-family: Abril Fatface, sans-serif;
+    position: absolute;
+    font-size: 5rem;
+    color: #fff;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.212);
+}
+
+.img-slider{
+    position: relative;
+    width: 1750px;
+    height: 800px;
+    margin: 0px;
+    background: #fff;
+}
+
+.img-slider .slide{
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    clip-path: circle(0% at 0 50%);
+}
+
+.img-slider .slide.active{
+    clip-path: circle(150% at 0 50%);
+    transition: 2s;
+    transition-property: clip-path;
+}
+
+.img-slider .slide img{
+    z-index: 1;
+    width: 100%;
+    height: 80rem;
+    border-radius: 5px;
+}
+
+.img-slider .navigation{
+    z-index: 2;
+    position: absolute;
+    display: flex;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+  
+.img-slider .navigation .btn{
+    border-style: solid ;
+    border-color: #fff;
+    background: rgba(255, 255, 255, 0);
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+  
+.img-slider .navigation .btn.active{
+    background: #ffffff;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}

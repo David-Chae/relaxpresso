@@ -3,6 +3,7 @@ let slides = document.querySelectorAll('.slide');
 let btns = document.querySelectorAll('.btn');
 let currentSlide = 1;
 
+///////////////////////////////////////////////////////////////
 // Javascript for image slider manual navigation
 let manualNav = function(manual){
     slides.forEach((slide) => {
@@ -24,7 +25,9 @@ btns.forEach((btn, i) => {
     });
 });
 
-// Javascript for image slider autoplay navigation
+///////////////////////////////////////////////////////////////
+/* Javascript for image slider autoplay navigation
+ 
 let repeat = function(activeClass){
     let active = document.getElementsByClassName('active');
     let i = 1;
@@ -51,6 +54,7 @@ let repeat = function(activeClass){
     repeater();
 }
 repeat();
+*/
 
 ///////////////////////////////////////////////////////////////
 // Javascript for opening menu items.
@@ -60,15 +64,13 @@ const dishs = document.querySelectorAll('.dish')
 dishs.forEach(function(dish){
     dish.addEventListener("click", function(e){
         e.preventDefault();
-        
+
         let dishButton = dish.childNodes[1];
         let dishText = dishButton.childNodes[1];
         let dishName = dishText.childNodes[1];
         let dishIngredients = dishText.childNodes[3];
         let buttonIcon = dishButton.childNodes[3].childNodes[1];
         let dishImg = dish.childNodes[3];
-
-        //console.log(buttonIcon);
 
         if (dishButton.style.backgroundColor === '' || dishButton.style.backgroundColor === '#fff' ||
         dishButton.style.backgroundColor === 'rgb(255, 255, 255)'){
@@ -90,12 +92,14 @@ dishs.forEach(function(dish){
     })
 })
 
+
+
 const sides = document.querySelectorAll('.side');
 
 sides.forEach(function(side){
     side.addEventListener("click", function(e){
         e.preventDefault();
-        
+
         let sideButton = side.childNodes[1];
         let sideText = sideButton.childNodes[1];
         let sideName = sideText.childNodes[1];
@@ -121,3 +125,26 @@ sides.forEach(function(side){
 
     })
 })
+
+
+
+/************************************************************
+* Menu selection. 
+* Adds selected class name when a menu item has been clicked. 
+*************************************************************/ 
+
+let menuItems = document.querySelectorAll('.menu-item');
+
+menuItems.forEach(function(menuItem){
+    menuItem.addEventListener("click", function(e){
+        e.preventDefault();
+        console.log(menuItem.classList);
+
+        for(let i=0; i < menuItems.length; i++){
+            menuItems[i].classList.remove('selected');
+        }
+        menuItem.classList.add('selected');
+
+    })
+})
+

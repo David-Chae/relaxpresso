@@ -134,16 +134,26 @@ sides.forEach(function(side){
 *************************************************************/ 
 
 let menuItems = document.querySelectorAll('.menu-item');
+let menuSets = document.querySelectorAll('.menu-set');
 
 menuItems.forEach(function(menuItem){
     menuItem.addEventListener("click", function(e){
         e.preventDefault();
-        console.log(menuItem.classList);
+        // console.log(menuItem.classList);
 
         for(let i=0; i < menuItems.length; i++){
             menuItems[i].classList.remove('selected');
         }
         menuItem.classList.add('selected');
+
+        for(let i=0; i < menuSets.length; i++){
+             menuSets[i].classList.remove('selected');
+        }
+
+        let menuSetId = '#' + menuItem.textContent;
+        let menuSet = document.querySelector(menuSetId);
+
+        menuSet.classList.add('selected');
 
     })
 })

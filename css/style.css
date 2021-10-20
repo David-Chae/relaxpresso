@@ -168,3 +168,30 @@
 .menu-set.selected{
     display: grid;
 }
+
+/***************************************************************/
+/* Wi-Fi Section */
+/***************************************************************/
+
+.wifi-box{
+    display: flex;
+    flex-direction: row;
+    margin: 10rem auto;
+    width: 80%;
+}
+
+.wifi-textbox{
+    /* margin: 15rem; */
+    padding: 20rem;
+    max-width: 68rem;
+}
+
+.wifi-textbox h1{
+    font-size: 5rem;
+    text-transform: uppercase;
+}
+
+.wifi-textbox p{
+    font-size: 2.5rem;
+}
+

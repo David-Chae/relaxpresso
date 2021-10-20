@@ -130,6 +130,9 @@ body{
     text-transform: uppercase;
 }
 
+.heading-one{
+    padding-top: 5rem;
+}
 
 /***************************************************************/
 /* General Reusable Background Colour Components */

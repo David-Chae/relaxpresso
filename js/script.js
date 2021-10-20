@@ -158,3 +158,32 @@ menuItems.forEach(function(menuItem){
     })
 })
 
+/************************************************************
+* Wifi Illustration selection. 
+* Changes the data source when the illustration is clicked.
+* Updates the illustration with a counter. 
+*************************************************************/
+
+let wifiIllustration = document.getElementById('wifi-illustration');
+let wifiCounter = 0;
+
+wifiIllustration.addEventListener("click", function(){
+
+    wifiCounter++;
+
+    if(wifiCounter > 3){
+        wifiCounter = 1;
+    }
+
+    let full = wifiIllustration.src;
+    console.log(full);
+    let len = full.len;
+    console.log(len);
+    let pre = full.slice(0, len-5);
+    console.log(pre);
+    let currentData = pre + wifiCounter + ".svg";
+    wifiIllustration.src = "/img/illustrations/wifi_password_illustration_v" + currentData;
+    console.log(wifiIllustration.src);
+
+})
+

@@ -195,3 +195,44 @@
     font-size: 2.5rem;
 }
 
+/***************************************************************/
+/* Story Section */
+/***************************************************************/
+
+.story-profile-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1.5rem;
+    padding: 10rem 10% 5rem;
+}
+
+.profile-photo{
+    height: 30rem;
+    width: 30rem;
+    border-radius: 50%;
+    border: 3px solid #F0A42D;
+    margin: 1rem auto;
+    display: block;
+}
+
+.profile-name{
+    font-weight: bold;
+    font-size: 2rem;
+    font-family: "Roboto";
+    text-align: center;
+}
+
+.job-title{
+    font-weight: 400;
+    font-size: 1.6rem;
+    font-family: "Roboto";
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#story-description{
+    text-align: left;
+    font-size: 2rem;
+    width: 69rem;
+    margin: 4rem auto;
+}

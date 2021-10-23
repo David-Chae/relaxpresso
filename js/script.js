@@ -187,3 +187,33 @@ wifiIllustration.addEventListener("click", function(){
 
 })
 
+/************************************************************
+* Story speech bubble animation. 
+* Calls expand function when a pointer hovers over a profile
+* photo. Calls shrink function when a pointer moves away from
+* a profile photo. 
+*************************************************************/
+
+let profiles = document.querySelectorAll('.profile');
+
+profiles.forEach(function(profile){
+
+    let rectangle = $("#" + profile.id + "-photo");
+    let speechBubble = $("#" + profile.id + "-speech");
+
+    rectangle.hover(
+    function() {
+        speechBubble.css({
+        "animation-name": "expand",
+        "animation-duration": "0.25s"
+        });
+    },
+    function() {
+        speechBubble.css({
+        "animation-name": "shrink",
+        "animation-duration": "0.1s"
+        });
+    }
+    );
+
+});

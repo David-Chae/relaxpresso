@@ -372,3 +372,14 @@
     color: #fff;
     margin-left: 80%;
 }
+
+/***************************************************************/
+/* 404 Page Section */
+/***************************************************************/
+
+.page-not-found-container{
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+    margin-top: 5rem;
+}
